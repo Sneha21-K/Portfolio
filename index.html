@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>task2</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script>
+  const DB='mongodb+srv://snehakamthekar2227:Portfolio21@cluster0.1sp53ui.mongodb.net/Sneha?retryWrites=true&w=majority'
+mongoose.connect(DB,{
+    useNewUrlParser:true,useCreateIndex:true,
+    useUnifiedTopology:true,
+    useFindAndModify:false
+
+}).then(()=>
+    {
+        console.log('connection successful');
+
+    }).catch((err)) = console.log('no connection');
+
+</script>
+<style>
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  hr{
+    border: 0.5px solid rgba(49, 48, 48, 0.363);
+  }
+  a{
+    color: rgb(255, 255, 255);
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  body{
+    background-color:aliceblue;
+    color: black;
+  }
+  #smalllogo{
+    height: 20px;
+    width: 20px;
+  }
+  #myimg{
+    width: auto;
+    height: 200px;
+    border-radius: 50px;
+  }
+  .sidebar{
+    position: fixed;
+    padding: 20px;
+    text-decoration: none;
+    background-color: rgb(1, 9, 31);
+    height: 100%;
+  }
+  .sidebar1{
+    margin-left: 22%;
+    font-weight: 200%;
+  }
+  #logo{
+    justify-content: space-between;
+  }
+  .btn.btn-default{
+    background-color: rgb(211, 208, 208);
+    color:black;
+  }
+  #name{
+    padding: 100px;
+    padding-left: 300px;
+    background-image: linear-gradient(to right, rgb(180, 236, 234) rgb(222, 245, 242)ow);
+    margin-left: -22%;
+    height:717px;
+  }
+  #about{
+    background-image: linear-gradient(to right, rgb(180, 236, 234) rgb(222, 245, 242)ow);
+    padding: 100px;
+    padding-left: 22%;
+    margin-left: -10%;
+    height:717px;
+  }
+  #skill{
+    background-image: linear-gradient(to right, rgb(180, 236, 234) rgb(222, 245, 242)ow);
+    padding: 100px;
+    padding-left: 22%;
+    margin-left: -22%;
+    height:850px;
+  }
+  #education{
+    background-image: linear-gradient(to right, rgb(180, 236, 234) rgb(222, 245, 242)ow);
+    padding: 100px;
+    padding-left: 22%;
+    margin-left: -22%;
+    height:717px;
+  }
+  #contact{
+    background-image: linear-gradient(to right, rgb(180, 236, 234) rgb(222, 245, 242)ow);
+    padding: 100px;
+    padding-left: 22%;
+    margin-left: -22%;
+    height:717px;
+  }
+  #projects{
+    background-image: linear-gradient(to right, rgb(180, 236, 234) rgb(222, 245, 242)ow);
+    padding: 100px;
+    padding-left: 22%;
+    margin-left: -22%;
+    height:717px;
+  }
+  #languages{
+    width: auto;
+    height: 150px;
+    margin: 20px;
+  }
+  .space{
+    margin: 50px;
+    margin-left: 25%;
+  }
+  table{
+    margin: 20%;
+    margin-top: 10%;
+    width: fit-content;
+    box-shadow: 5px 5px 20px ;
+  }
+  tr,th,td{
+    border: 2px solid black;
+    padding: 15px;
+    
+  }
+  form{
+    margin: 35%;
+    margin-top: 10%;
+    width: 350px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px ;
+  }
+  label{
+    width: 80px;
+    padding: 10px;
+  }
+  button{
+    margin-left: 77px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1cm;
+    text-shadow:5px 10px 20px;
+  }
+  #headerline{
+    width: 300px;
+    border: 0.8px black;
+    border-style:solid;
+
+  }
+  a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+  
+</style>
+
+</head>
+<body>
+<div class="sidebar">
+<nav><br>
+  <div>
+    <img src="Sneha photo (1).jpg" id="myimg" alt="myimg"><br><br>
+    <center><h4 style="color: white;"><b>PORTFOLIO</b></h4></center><hr>
+  </div>
+  <div>
+    <center>
+    <a href="#name">HOME</a><hr>
+    <a href="#about">ABOUT</a><hr>
+    <a href="#skill">SKILLS</a><hr>
+    <a href="#education">EDUCATION</a><hr>
+    <a href="#projects">PROJECTS</a><hr>
+    <a href="#contact">CONTACT</a><hr>
+  </center>
+  </div>
+  <div id="logo">
+    <center>
+    
+    <a href="https://www.linkedin.com/in/sneha-kamthekar-068b67205"><i id="smalllogo" class="fa fa-linkedin"></i></a>
+  </center>
+  </div>
+</nav>
+</div>
+
+<div class="sidebar1">
+
+  <div id="name">
+      
+      <p>
+      <hr>
+      <h1 style="margin-left: 30%; font-weight: 200; text-decoration-color: rgb(54, 54, 54);">HELLO,I'M <br>SNEHA KAMTHEKAR</h1>
+      <hr>
+      <br>
+      <p> An Organized and Disiplined individual ready to present
+        my skills to provide you the best service.<br>I strive to maintain accuracy and consistency in task completion, individual performance and team goalachievement, using acute attention to detail. Additionally, I offer decision-making, management and 
+        scheduling flexibility.
+        I believe my teamwork and quality control abilities will provide an invaluable asset to your team. </p>
+        <br>
+        
+
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="Sneha's Resume (9).pdf" class="btn btn-default">Download Resume</a>
+          
+      </center>
+      </p>
+  </div>
+
+  <div id="about">
+    <center><h3>ABOUT ME</h3></center>
+    <hr id="headerline">
+    <br><br>
+    <div class="card">
+      <div class="card-header">
+        Intern at Oasis Infobyte
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Web developer</h5>
+        <p class="card-text">
+          1] Created a landing page for Food Website using HTML,CSS and
+          Bootstrap. <br>
+          2]Built a Temperature Converter using Javascript and HTML.<br> 
+          3]Built a Portfolio website.</p>
+       
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Intern at Lets Grow More
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Data Scientist</h5>
+        <p class="card-text"> 
+          1]Classified Iris Flowers using Machine learning Algorithms.
+          <br>
+          2]Prediction of Stock Market using LSTM.
+          <br> 
+          3]Image to Sketch Conversion using CV2 library.</p>
+       
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Intern at Edulyt India
+      </div>
+    <div class="card-body">
+      <h5 class="card-title">Data Analyst</h5>
+      <p class="card-text"> 
+        Prepared a detailed analysis of the credit card details of the
+        client's Bank.
+        <br>
+        </p>
+     
+    </div>
+  </div>
+</div>
+
+    <div id="skill">
+    <center><h3>SKILLS</h3></center>
+    <hr id="headerline">
+    <div class="space">
+      <img id="languages" src="html.png" alt="html">
+      
+      
+      <img id="languages" src="python.png" alt="python">
+      
+    </div>
+      <div class="space">
+      <img id="languages" src="css.png" alt="css">
+      <img id="languages" src="JavaScript.png" alt="JavaScript">
+      
+      
+    </div>
+    </div>
+
+    <div id="education">
+      <center><h3>EDUCATION</h3></center>
+      <hr id="headerline">
+      <table>
+        <tr>
+          <th>Qualification</th>
+          <th>University</th>
+          <th>Year of passing</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>B.E</td>
+          <td>Savitribai Phule Pune University</td>
+          <td>2024</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>TSBIE</td>
+          <td>2020</td>
+          <td>90.4%</td>
+        </tr>
+        <tr>
+          <td>SSC</td>
+          <td>Maharashtra State Board</td>
+          <td>2018</td>
+          <td>94.8%</td>
+        </tr>
+      </table>
+    </div>
+    <div id="projects">
+      <center><h3>PROJECTS</h3></center>
+      <hr id="headerline">
+      <div class="row">
+        <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+        <img src="weaaa.png" class="card-img-top" alt="weather app">
+        <div class="card-body">
+          
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://sneha21-k.github.io/weather-app/weather-web-app-main/index.html" style="color:rgb(27, 19, 116);">View Project </a>
+      </div>
+
+      </div>
+        </div>
+        <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="cofeeee.png" class="card-img-top" alt="weather app">
+        <div class="card-body">
+          
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://sneha21-k.github.io/Mini-project/Coffee%20Day/" style="color:rgb(27, 19, 116);">View Project </a>
+      </div>
+
+      </div>
+    </div>
+    <div class="col-md-4">
+
+      <div class="card" style="width: 18rem;">
+        <img src="power bi.png" class="card-img-top" alt="weather app">
+        <div class="card-body">
+          
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="" style="color:rgb(27, 19, 116);">View Project </a>
+      </div>
+
+      
+    </div>
+  </div>
+  </div>
+</div>
+
+
+  <div id="contact">
+    <center><h3>CONTACT</h3></center>
+    <hr id="headerline">
+    <form action="https://formsubmit.co/snehakamthekar2227@gmail.com" method="POST" >
+      <div>
+        <label>Name</label>
+        <input type="text" name="Name" required>
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="text" name="Email" required>
+      </div>
+      <div>
+        <label>Message</label>
+        <input type="text" name="Message" required>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>

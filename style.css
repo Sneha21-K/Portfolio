@@ -1,0 +1,132 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    hr{
+      border: 0.5px solid rgba(49, 48, 48, 0.363);
+    }
+    a{
+      color: rgb(14, 13, 13);
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    body{
+      background-color:rgb(255, 255, 255);
+      color: black;
+    }
+    #smalllogo{
+      height: 20px;
+      width: 20px;
+    }
+    #myimg{
+      width: auto;
+      height: 200px;
+      border-radius: 50px;
+    }
+    .sidebar{
+      position: fixed;
+      padding: 20px;
+      text-decoration: none;
+      background-color: rgb(1, 9, 31);
+      height: 100%;
+    }
+    .sidebar1{
+      margin-left: 22%;
+      font-weight: 200%;
+    }
+    #logo{
+      justify-content: space-between;
+    }
+    .btn.btn-default{
+      background-color: rgb(211, 208, 208);
+      color:black;
+    }
+    #name{
+      padding: 100px;
+      padding-left: 300px;
+      background-color: rgb(192, 225, 238);
+      margin-left: -22%;
+      height:717px;
+    }
+    #about{
+      background-color:  rgb(192, 225, 238);
+      padding: 100px;
+      padding-left: 22%;
+      margin-left: -10%;
+      height:717px;
+    }
+    #skill{
+      background-color: rgb(255, 255, 255);
+      padding: 100px;
+      padding-left: 22%;
+      margin-left: -22%;
+      height:850px;
+    }
+    #education{
+      background-color:rgb(255, 255, 255);
+      padding: 100px;
+      padding-left: 22%;
+      margin-left: -22%;
+      height:717px;
+    }
+    #contact{
+      background-color:rgb(255, 255, 255);
+      padding: 100px;
+      padding-left: 22%;
+      margin-left: -22%;
+      height:717px;
+    }
+    #languages{
+      width: auto;
+      height: 150px;
+      margin: 20px;
+    }
+    .space{
+      margin: 50px;
+      margin-left: 25%;
+    }
+    table{
+      margin: 20%;
+      margin-top: 10%;
+      width:auto;
+      box-shadow: 5px 5px 20px ;
+    }
+    tr,th,td{
+      border: 2px solid black;
+      padding: 15px;
+      
+    }
+    form{
+      margin: 35%;
+      margin-top: 10%;
+      width: 350px;
+      border: 2px solid black;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 20px ;
+    }
+    label{
+      width: 80px;
+      padding: 10px;
+    }
+    button{
+      margin-left: 77px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+    h3{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 1cm;
+      text-shadow:5px 10px 20px;
+    }
+    #headerline{
+      width: 300px;
+      border: 0.8px black;
+      border-style:solid;
+  
+    }
+    .h4{
+        color: white;
+    }
+    
